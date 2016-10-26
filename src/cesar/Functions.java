@@ -47,7 +47,7 @@ public class Functions {
         for (int i = 0; i < palabra_2.length; i++) {
             for (int j = 0; j < arreglo.length; j++) {
                 if (palabra_2[i] == arreglo[j]) {
-                    verify = (j + (clave % 27));
+                    verify = (j + (clave % 96));
                     if (verify >= arreglo.length) {
                         auxiliar = verify - arreglo.length;
                         arr_cifrado[cont_cifrado] = arreglo[auxiliar];
@@ -84,7 +84,7 @@ public class Functions {
         for (int i = 0; i < cadenaDecifrar_2.length; i++) {
             for (int j = 0; j < arreglo.length; j++) {
                 if (cadenaDecifrar_2[i] == arreglo[j]) {
-                    verify = (j - (clave % 27));
+                    verify = (j - (clave % 96));
                     if (verify < 0) {;
                         auxiliar = arreglo.length - (-verify);
                         arr_Decifrado[cont_cifrado] = arreglo[auxiliar];
