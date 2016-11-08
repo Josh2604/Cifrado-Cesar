@@ -16,7 +16,7 @@ package cesar;
   -----------------------------------------------------------*/
 public class Functions {
 
-    /*---------------------------------------------------------------
+       /*---------------------------------------------------------------
          | Creación de arreglo(alfabeto), obtención del texto a cifrar |
          | y división de texto en caracteres para su comparación.      |
          ---------------------------------------------------------------*/
@@ -38,8 +38,8 @@ public class Functions {
 
 
         /*---------------------------------------------------------------------
-        |Comparación de la cadena a cifrar con el alfabeto y el recorrido de|
-        |tres caracteres sobre el afabeto para obtener la cadena cifrada.   |
+        |Comparación de la cadena a cifrar con el alfabeto y el recorrido de  |
+        |los caracteres sobre el afabeto para obtener la cadena cifrada.      |
         ---------------------------------------------------------------------*/
         char arr_cifrado[] = new char[palabra_2.length];
         int cont_cifrado = 0, auxiliar = 0, verify = 0;
@@ -67,9 +67,9 @@ public class Functions {
         return text_cifrado;
     }
 
-    /*---------------------------------------------------------------------
-    |          Método para decifrar la cadena ingresada.                |
-    ---------------------------------------------------------------------*/
+  /*-----------------------------------------------------------------------
+    |          Método para decifrar la cadena ingresada.                  |
+    -----------------------------------------------------------------------*/
     public String decifrarCadena(String cadenaDecifrar, int clave) {
         char cadenaDecifrar_2[] = new char[cadenaDecifrar.length()];
         String textDecifrado = "";
